@@ -15,6 +15,7 @@ defmodule CustomGenExampleProper do
 		forall kv <- list({key(), val()}) do
 			m = Map.new(kv)
 			for {k,_v} <- kv, do: Map.fetch!(m, k)
+			true
 		end
 	end
 
